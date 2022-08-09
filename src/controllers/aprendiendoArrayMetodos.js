@@ -106,7 +106,7 @@ productos.forEach(function(producto){
    popular.textContent= "*"+ producto.popularidad
    //Creando descripcion
    let descripcion=document.createElement("p")
-   descripcion.classList.add("text-danger","d-none")
+   descripcion.classList.add("text-danger","d-none.")
    descripcion.textContent=producto.descripcion
 
    // Definicion padres e hijos 
