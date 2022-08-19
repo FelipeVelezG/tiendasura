@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -14,79 +15,135 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Ibarra+Real+Nova:ital@1&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../../assets/styles/estilos.css">
-    <title>Document</title>
+  <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-                <ul class="navbar-nav ms-auto ">
-                    <li class="nav-item">
-                      <a class="nav-link " href="#"><i class="bi bi-cart3 fs-2"></i>
-                            <span  id="pildora" class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger">
-                            0
-                            </span>
-                        </a>
-                    </li>
-                  </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 align-self-center">
-                    <img id="imagenInfo" src="" alt="" class="img-fluid w-100">
-                </div>
-                <div class="col-12 col-md-6 align-self-center">
-                    <h3 id="nombreInfo" >NOMBRE PRODUCTO</h3>
-                    <p id="descripcionInfo" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, reprehenderit praesentium. Optio exercitationem deserunt totam minus sunt. Maxime eius maiores sunt perspiciatis, magni ipsum libero impedit nostrum veniam suscipit provident.</p>
-                    
-                    <i class="bi bi-pip"></i>
-                    <i class="bi bi-pip"></i>
-                    <i class="bi bi-pip"></i>
-                    <h2 id="precioInfo" >$18000</h2>
-                    <hr>
-                    <h3><i class="bi bi-truck fs-5"></i> Envios a todo el país </h3>
-                    <h3><i class="bi bi-arrow-counterclockwise fs-4"></i>Devolucion en 30 días </h3>
-                    <h3><i class="bi bi-person-rolodex fs-4"></i> Contactanos</h3>
-                    <br>
-                    <label for="">Cantidad</label>
-                    <input id="cantidadProducto" type="number" class="form-control" value="1" min="1">
-                    <button id="botonAgregarCarrito" type="button" class="btn btn-info mt-3"><i class="bi bi-cart3 fs-3"  ></i> Añadir al carrito</button>
-                </div>
-            </div>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark animate__animated animate__bounce ">
+      <div class="container-fluid">
+        <a class="navbar-brand  h-25" href="#"> <img src="https://firebasestorage.googleapis.com/v0/b/tiendasurajfv.appspot.com/o/Logo%20blanco%404x.png?alt=media&token=52429e06-1311-4b4b-af1a-2d90322e5751" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="src/views/tienda.html">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">design yourself</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  " href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample">contact us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link " href="#"><i class="bi bi-cart3 fs-2"></i>
+                <span id="pildora"
+                  class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger">
+                  0
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
-    </main>
-    <footer>
+      </div>
+    </nav>
+  </header>
+  <!-- <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link " href="#"><i class="bi bi-cart3 fs-2"></i>
+                <span id="pildora"
+                  class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger">
+                  0
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header> -->
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 align-self-center">
+          <img id="imagenInfo" src="" alt="" class="img-fluid w-100 ">
+        </div>
+        <div class="col-12 col-md-6 align-self-center">
+          <h3 id="nombreInfo">NOMBRE PRODUCTO</h3>
+          <p id="descripcionInfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, reprehenderit
+            praesentium. Optio exercitationem deserunt totam minus sunt. Maxime eius maiores sunt perspiciatis, magni
+            ipsum libero impedit nostrum veniam suscipit provident.</p>
+
+          <div class="card-body">
+            <h5 class="card-title">Califica el producto</h5>
+            <div id="contenedorEstrellas" style.color="orange" ></div>
+            <!-- <span class="bi bi-star-fill" onclick="calificar(this)" style="cursor: pointer;" id="1estrella"></span>
+            <span class="bi bi-star-fill" onclick="calificar(this)" style="cursor: pointer;" id="2estrella"></span>
+            <span class="bi bi-star-fill" onclick="calificar(this)" style="cursor: pointer;" id="3estrella"></span>
+            <span class="bi bi-star-fill" onclick="calificar(this)" style="cursor: pointer;" id="4estrella"></span>
+            <span class="bi bi-star-fill" onclick="calificar(this)" style="cursor: pointer;" id="5estrella"></span> -->
+          </div>
+
+          <i class="bi bi-pip"></i>
+          <i class="bi bi-pip"></i>
+          <i class="bi bi-pip"></i>
+          <h2 id="precioInfo">$18000</h2>
+          <hr>
+          <h3><i class="bi bi-truck fs-5"></i> Envios a todo el país </h3>
+          <h3><i class="bi bi-arrow-counterclockwise fs-4"></i>Devolucion en 30 días </h3>
+          <h3><i class="bi bi-person-rolodex fs-4"></i> Contactanos</h3>
+          <br>
+          <h4 id="popularidadInfo" ></h4>
+          <label for="">Cantidad</label>
+          <input id="cantidadProducto" type="number" class="form-control" value="1" min="1">
+          <button id="botonAgregarCarrito" type="button" class="btn btn-info mt-3"><i class="bi bi-cart3 fs-3"></i>
+            Añadir al carrito</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
 
 
-    </footer>
+  </footer>
 
 
-    <script src="../controllers/detalleProducto.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  <script src="../controllers/detalleProducto.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
 </body>
+
 </html>
