@@ -28,11 +28,12 @@ let descripcion=document.getElementById("descripcionInfo")
 descripcion.textContent=producto.descripcion
 
 let popularidad=document.getElementById("popularidadInfo")
-popularidad.textContent=producto.popularidad
+// popularidad.textContent=producto.popularidad
 
 
 let pildora=document.getElementById("pildora")
 console.log(pildora.textContent)
+
 let contenedorEstrellas= document.getElementById("contenedorEstrellas")
 
 pintarEstrellas(producto.popularidad,contenedorEstrellas)
