@@ -72,7 +72,11 @@ carrito.forEach(function(producto){
     subTotal.classList.add("fw-bold","text-center","bg-dark","text-white")
     subTotal.textContent= "$" + producto.precio.split("$")[1] *producto.cantidad
 
-   
+    totalCompra.textContent= (producto.precio.split("$")[0] *producto.cantidad)+(producto.precio.split("$")[1] *producto.cantidad)
+    // let totalCompra= document.getElementById("totalCompra")
+    // totalCompra.classList.add("bg-dark","text-white")
+    // totalCompra.textContent =  
+    
 
     
     let botonLimpiar=document.getElementById("botonLimpiar")

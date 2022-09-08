@@ -70,11 +70,12 @@ let productos = [
         fotos:["https://firebasestorage.googleapis.com/v0/b/tiendasurajfv.appspot.com/o/ceramicaTapaGoma%20(1).jpg?alt=media&token=d68f54ee-f0f4-4a5d-965e-7bce719a45f8","https://firebasestorage.googleapis.com/v0/b/tiendasurajfv.appspot.com/o/ceramicaTapaGoma%20(2).jpg?alt=media&token=ad90269d-ac14-496c-9a0f-0f4f495babe1"],
         descripcion: "Pocillo en porcelana  con tapa de goma personalizados para que regales en momentos especiales a personas especiales "
     }
-]
+];
 
 
 let fila = document.getElementById("fila")
 // recorriendo el arreglo
+
 
 productos.forEach(function(producto){
    // creando un div desde js
