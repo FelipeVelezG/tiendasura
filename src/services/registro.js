@@ -1,21 +1,23 @@
-import { getAuth, createUserWithEmailAndPasswordd } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-auth.js"
+import {getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js";
 
 let botonRegistro=document.getElementById("botonRegistro")
 
 botonRegistro.addEventListener("click",function(evento){
+  evento.preventDefault()
   console.log("estoy en el evento");
-    evento.preventDefault()
+    
 
     let email=document.getElementById("correo").value
     let password=document.getElementById("password").value
     let formulario =document.getElementById("formulario")
 
     const auth = getAuth();
-    createUserWithEmailAndPasswordd(auth, email, password)
+    createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
     // Signed in
-    const user = userCredential.user
-    // ...
+    const user = userCredential.user;
+    console.log("si ingresa")
+    
     Swal.fire({
       position: 'top-center',
       icon: 'success',
@@ -23,19 +25,19 @@ botonRegistro.addEventListener("click",function(evento){
       showConfirmButton: false,
       timer: 2000
     })
-    formulario.reset()
+    // formulario.reset()
     
     })
     .catch((error) => {
-    const errorCode = error.code
-    const errorMessage = error.message
+    const errorCode = error.code;
+    const errorMessage = error.message;
     // ..
-    Swal.fire({
+      Swal.fire({
       icon: 'error',
       title: 'Upps...',
       text: errorCode + errorMessage,
-    })
-  });
-  window.location.href = "../../index.html"
+      })
+    });
+  // window.location.href = "../../index.html"
 
 })

@@ -1,4 +1,4 @@
-import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-auth.js"
+import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js";
 
 let botonSalir=document.getElementById("botonSalir")
 botonSalir.addEventListener("click",function(evento){

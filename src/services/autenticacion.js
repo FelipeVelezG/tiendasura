@@ -1,8 +1,9 @@
-import {getAuth, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.9.3/firebase-auth.js";
+import {getAuth, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js";
 
 let ingreso = document.getElementById("ingreso")
 ingreso.addEventListener("click", function (evento) {
-  evento.preventDefault();
+  evento.preventDefault()
+  console.log("Esta ingresando")
 
   let email = document.getElementById("emailEntrar").value;
   let password = document.getElementById("passwordEntrar").value;

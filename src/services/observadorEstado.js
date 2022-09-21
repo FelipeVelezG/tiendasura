@@ -1,4 +1,4 @@
-import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-auth.js"
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js";
 let botonsalir=document.getElementById("botonSalir")
 const auth = getAuth();
 onAuthStateChanged(auth, (user) => {
@@ -8,6 +8,7 @@ onAuthStateChanged(auth, (user) => {
     const uid = user.uid;
     // ...
     console.log(user.email)
+
     let usuario= document.getElementById("usuario")
     usuario.textContent=user.email
     botonsalir.classList.remove("d-none")
